@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="admin.js" defer></script>
+  <link rel="stylesheet" href="/app/public/style2.css">
+  <title>Carrito de compras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
 </head>
+
 <body>
-  <main>
-    <div class="form-container">
-      <h1>Bienvenido al área de administración</h1>
+  <header id="header">
+    <div>
+      <h2>Inicio</h1>
+    </div>
+    <div>
+      <h2>Productos</h1>
+    </div>
+
+    <div>
+      <h2>Psilocibina</h1>
+    </div>
+    <div>
       <button>Cerrar sesión</button>
     </div>
+    <div>
+      <img id="carrito" class="carrito" src="/app/public/images/carrito-de-compras.png" alt="">
+      <div id="numero"></div>
+    </div>
+
+  </header>
+
+  <main>
+    <div id="contenedor" class="contenedor"> </div>
   </main>
+
+  <div id="contenedorCompra">
+    <div class="informacionCompra" id="informacionCompra">
+      <h2>Cesta</h2>
+      <p class="x" id="x">x</p>
+    </div>
+
+    <div class="productosCompra" id="productosCompra"></div>
+    <div class="total" id="total"></div>
+    <button>Finalizar Compra</button>
+  </div>
+
+
+  <script src="/app/public/main.js"></script>
+  <script src="/app/public/admin.js" defer></script>
 </body>
+
 </html>

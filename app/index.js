@@ -8,12 +8,18 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import {methods as authentication} from "./controllers/authentication.controller.js"
 import {methods as authorization} from "./middlewares/authorization.js";
 
+import  cors   from "cors";
+
+
+
 //server
 const app = express();
 
-app.set('port', 4000);
+app.set('port', 5500);
 
 app.listen(app.get('port'));
+
+
 
 console.log("Servidor corriendo en el puerto", app.get("port"));
 
@@ -21,7 +27,7 @@ console.log("Servidor corriendo en el puerto", app.get("port"));
 app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 app.use(cookieParser())
-
+app.use(cors()) 
 
 //rutas
 

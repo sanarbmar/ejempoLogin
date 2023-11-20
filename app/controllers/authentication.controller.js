@@ -35,7 +35,7 @@ async function login(req, res) {
         path: "/"
       }
       res.cookie("jwt",token,cookieOption);
-      res.send({status:"ok",message:"Usuario loggeado",redirect:"/admin"});
+      res.send({status:"ok",message:"Usuario loggeado",redirect:"/app/pages/admin/admin.html"});
 }
 
 async function register(req, res) {
